@@ -1,0 +1,38 @@
+{
+  "404": {
+    "metaTitle": "404 meta title Finnish",
+    "slug": "404",
+    "title": "404 title Finnish"
+  },
+  "articles": {
+    "metaDescription": "Articles metadescription text Finnish",
+    "metaTitle": "Articles metatitle Finnish",
+    "slug": "articles-finnish",
+    "title": "Articles title Finnish"
+  },
+  "common": {
+    "title": "Common title Finnish"
+  },
+  "home": {
+    "countries": "Meillä on toimistoja yhteensä {{countryCount}} maassa ympäri Eurooppaa.",
+    "countryCount": "kolmessa",
+    "metaDescription": "Home metadescription text Finnish",
+    "metaTitle": "Home metatitle Finnish",
+    "title": "Home title Finnish"
+  },
+  "design": {
+    "metaDescription": "Design metadescription text Finnish",
+    "metaTitle": "Design metatitle Finnish",
+    "slug": "design-finnish",
+    "title": "Design title Finnish"
+  },
+  "privacy-notice": {
+    "title": "Privacy notice Finnish"
+  },
+  "services": {
+    "metaDescription": "Services metadescription text Finnish",
+    "metaTitle": "Services metatitle Finnishh",
+    "slug": "services-finnish",
+    "title": "Services title Finnish"
+  }
+}

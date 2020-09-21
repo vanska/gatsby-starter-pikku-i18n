@@ -1,0 +1,38 @@
+{
+  "404": {
+    "metaTitle": "404 meta title English",
+    "slug": "404",
+    "title": "404 title English"
+  },
+  "articles": {
+    "metaDescription": "Articles metadescription text English",
+    "metaTitle": "Articles metatitle English",
+    "slug": "articles-english",
+    "title": "Articles title English"
+  },
+  "common": {
+    "title": "Common title English"
+  },
+  "home": {
+    "countries": "We're in {{countryCount}} countries around Europe.",
+    "countryCount": "3",
+    "metaDescription": "Home metadescription text English",
+    "metaTitle": "Home metatitle English",
+    "title": "Home title English"
+  },
+  "design": {
+    "metaDescription": "Design metadescription text English",
+    "metaTitle": "Design metatitle English",
+    "slug": "design-english",
+    "title": "Design title English"
+  },
+  "privacy-notice": {
+    "title": "Privacy notice English"
+  },
+  "services": {
+    "metaDescription": "Services metadescription text English",
+    "metaTitle": "Services metatitle English",
+    "slug": "services-english",
+    "title": "Services title English"
+  }
+}

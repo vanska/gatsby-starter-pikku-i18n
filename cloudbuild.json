@@ -1,0 +1,30 @@
+{
+  "steps": [
+    {
+      "name": "node:10.18.1",
+      "entrypoint": "npm",
+      "args": ["install"]
+    },
+    {
+      "name": "node:10.18.1",
+      "entrypoint": "npm",
+      "args": ["install", "firebase-tools"]
+    },
+    {
+      "name": "node:10.18.1",
+      "entrypoint": "npm",
+      "args": ["run", "stage-build"]
+    },
+    {
+      "name": "node:10.18.1",
+      "entrypoint": "./node_modules/.bin/firebase",
+      "args": [
+        "deploy",
+        "--project",
+        "gatsby-starter-pikku-i18n",
+        "--token",
+        "$_TOKEN"
+      ]
+    }
+  ]
+}

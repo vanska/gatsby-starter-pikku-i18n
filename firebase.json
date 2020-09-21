@@ -1,0 +1,113 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "headers": [
+      {
+        "source": "locales/**/*",
+        "headers": [
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          }
+        ]
+      },
+      {
+        "source": "**/*",
+        "headers": [
+          {
+            "key": "cache-control",
+            "value": "cache-control: public, max-age=0, must-revalidate"
+          }
+        ]
+      },
+      {
+        "source": "static/**",
+        "headers": [
+          {
+            "key": "cache-control",
+            "value": "public, max-age=31536000, immutable"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(css|js)",
+        "headers": [
+          {
+            "key": "cache-control",
+            "value": "public, max-age=31536000, immutable"
+          }
+        ]
+      },
+      {
+        "source": "sw.js",
+        "headers": [
+          {
+            "key": "cache-control",
+            "value": "cache-control: public, max-age=0, must-revalidate"
+          }
+        ]
+      },
+      {
+        "source": "page-data/**",
+        "headers": [
+          {
+            "key": "cache-control",
+            "value": "cache-control: public, max-age=0, must-revalidate"
+          }
+        ]
+      }
+    ],
+    "redirects": [
+      {
+        "source": "/services",
+        "destination": "/en/services-english",
+        "type": 301
+      },
+      {
+        "source": "/design",
+        "destination": "/en/services-english/design-english",
+        "type": 301
+      },
+      {
+        "source": "/services-english",
+        "destination": "/en/services-english",
+        "type": 301
+      },
+      {
+        "source": "/services-english/design-english",
+        "destination": "/en/services-english/design-english",
+        "type": 301
+      },
+      {
+        "source": "/articles-english",
+        "destination": "/en/articles-english",
+        "type": 301
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "/",
+        "destination": "/en/index.html"
+      },
+      {
+        "source": "/*",
+        "destination": "/en/404/index.html"
+      },
+      {
+        "source": "/en/**",
+        "destination": "/en/404/index.html"
+      },
+      {
+        "source": "/fi/**",
+        "destination": "/fi/404/index.html"
+      }
+    ]
+  }
+}
