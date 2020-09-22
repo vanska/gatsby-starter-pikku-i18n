@@ -17,7 +17,7 @@ export default function HomePage() {
       <p>
         <Trans
           i18nKey="countries"
-          countryCount={<strong key={`countryCountSpanId`}>666</strong>}
+          countryCount={<strong key={`countryCountSpanId`}>3</strong>}
         />
         <Trans
           i18nKey="countries"

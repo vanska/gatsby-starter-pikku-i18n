@@ -42,6 +42,15 @@ export default function Footer() {
       <FooterNavigation items={navigation} />
       <LanguageSwitcher />
       <Link to={`/en/privacy-notice`}>{t("privacy-notice:title")}</Link>
+      <p>
+        <a
+          rel="noreferrer"
+          href="https://github.com/vanska/gatsby-starter-pikku-i18n"
+          target="_blank"
+        >
+          gatsby-starter-pikku-i18n#v1.0.0
+        </a>
+      </p>
     </footer>
   )
 }
