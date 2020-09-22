@@ -2,6 +2,8 @@
 
 An opinionated Gatsby starter template for multi-lingual workflow.
 
+:fire: [Starter on firebase](https://gatsby-starter-pikku-i18n.web.app)
+
 Acts as an end-to-end test project for these projects aiming to solve the i18n problem for Gatsby:
 
 - `pikku-i18n`
@@ -28,7 +30,7 @@ Acts as an end-to-end test project for these projects aiming to solve the i18n p
 - `noindex, nofollow` for all non-production build pages and for all 404 pages
 - MDX pages with slugs from i18n locales
 
-Firebase hosting:
+:fire: Firebase hosting support:
 
 - Correct cache settings for GatsbyJS static files
 - Generate `firebase.json` based on default settings from `./config/firebase-defaults.json` and site configuration
