@@ -18,7 +18,7 @@
     "gatsby-transformer-sharp": "^2.3.19",
     "i18next": "^17.3.1",
     "i18next-xhr-backend": "^3.2.2",
-    "pikku-i18n": "github:vanska/pikku-i18n#v1.0.1",
+    "pikku-i18n": "github:vanska/pikku-i18n#v1.0.2",
     "prop-types": "^15.7.2",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
@@ -69,7 +69,7 @@
     "production-build-serve-nat": "npm run clear && npm run production-build && npm run serve-firebase-nat",
     "production-build-deploy": "npm run clear && npm run production-build && npm run deploy",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "test-translations": "node ./translations/test/checkTranslationLengths.js"
+    "test-translations": "node ./translations/test/index.js"
   },
   "repository": {
     "type": "git",
