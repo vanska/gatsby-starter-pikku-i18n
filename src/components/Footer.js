@@ -48,7 +48,7 @@ export default function Footer() {
           href="https://github.com/vanska/gatsby-starter-pikku-i18n"
           target="_blank"
         >
-          gatsby-starter-pikku-i18n#v1.0.0
+          gatsby-starter-pikku-i18n#v1.0.1
         </a>
       </p>
     </footer>

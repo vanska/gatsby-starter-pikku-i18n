@@ -1,7 +1,7 @@
 {
   "name": "gatsby-starter-pikku-i18n",
   "description": "I18n boilerplate project with pikku-i18n for GatsbyJS",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Mikko Vänskä <mikkovanska.com@gmail.com>",
   "dependencies": {
     "@mdx-js/mdx": "^1.5.7",
