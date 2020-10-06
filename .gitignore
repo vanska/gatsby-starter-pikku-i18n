@@ -3,6 +3,10 @@
 .yalc
 yalc.lock
 
+# Firebase
+
+.firebase/*
+
 # Logs
 logs
 *.log
