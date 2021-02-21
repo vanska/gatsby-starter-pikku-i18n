@@ -18,7 +18,7 @@
     "gatsby-transformer-sharp": "^2.3.19",
     "i18next": "^17.3.1",
     "i18next-xhr-backend": "^3.2.2",
-    "pikku-i18n": "github:vanska/pikku-i18n#v1.0.2",
+    "pikku-i18n": "^v2.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",

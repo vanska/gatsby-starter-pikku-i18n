@@ -2,11 +2,12 @@ import React, { useContext } from "react"
 import { graphql, Link } from "gatsby"
 import SEO from "../components/Seo"
 import { PageData } from "../components/Layout"
-import i18n, { Trans } from "pikku-i18n"
+import { t, Trans, resources } from "pikku-i18n"
 
 export default function HomePage() {
   const { navigationLinks } = useContext(PageData)
-  const { t } = i18n
+
+  console.log(resources)
 
   return (
     <>
@@ -17,13 +18,15 @@ export default function HomePage() {
       <p>
         <Trans
           i18nKey="countries"
-          countryCount={<strong key={`countryCountSpanId`}>3</strong>}
+          subs={{ countryCount: <strong key={`countryCountSpanId`}>3</strong> }}
         />
         <Trans
           i18nKey="countries"
-          countryCount={
-            <span key={`countryCountSpanId`}>{t("countryCount")}</span>
-          }
+          subs={{
+            countryCount: (
+              <span key={`countryCountSpanId`}>{t("countryCount")}</span>
+            )
+          }}
         />
       </p>
       <p>Active Node environment: {process.env.NODE_ENV}</p>

@@ -1,9 +1,8 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import i18n from "pikku-i18n"
+import { t } from "pikku-i18n"
 
 export default function Content({ data, path }) {
-  const { t } = i18n
   const { pages } = data
   return (
     <>

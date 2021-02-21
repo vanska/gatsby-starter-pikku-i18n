@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import React, { useContext } from "react"
 import { PageData } from "./Layout.js"
 import LanguageSwitcher from "./LanguageSwitcher"
-import i18n from "pikku-i18n"
+import { t } from "pikku-i18n"
 
 // Deconstructed props
 const FooterNavigationItem = ({ path, title, children }) => {
@@ -34,8 +34,6 @@ const FooterNavigation = props => {
 
 export default function Footer() {
   const { navigation } = useContext(PageData)
-
-  const { t } = i18n
 
   return (
     <footer>

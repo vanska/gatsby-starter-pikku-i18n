@@ -1,10 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
-import i18n from "pikku-i18n"
+import { t } from "pikku-i18n"
 
 export default function PreDeploymentPage() {
-  const { t } = i18n
-
   return (
     <>
       <h1>{t("title")}</h1>

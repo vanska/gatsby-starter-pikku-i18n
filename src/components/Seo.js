@@ -2,12 +2,10 @@ import React, { useContext } from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { PageData } from "./Layout"
-import i18n from "pikku-i18n"
+import { t } from "pikku-i18n"
 import seoAltLinks from "./seoAltLinks"
 
 const SEO = props => {
-  const { t } = i18n
-
   const {
     namespaces,
     lang,

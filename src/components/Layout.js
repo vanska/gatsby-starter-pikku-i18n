@@ -1,6 +1,6 @@
 import React, { createContext } from "react"
 import PropTypes from "prop-types"
-import i18n from "pikku-i18n"
+import { init } from "pikku-i18n"
 import SEO from "./Seo"
 import { useStaticQuery, graphql } from "gatsby"
 import { MDXProvider } from "@mdx-js/react"
@@ -26,7 +26,7 @@ const combineNavigationLinkNodes = (lang, nodes) =>
     .reduce((a, c) => ({ ...a, ...c }))
 
 export function Layout({ children, data, pageContext }) {
-  // console.log("data", data.i18n)
+  console.log("data", data)
   // console.log("pageContext", pageContext)
 
   const {
@@ -81,15 +81,38 @@ export function Layout({ children, data, pageContext }) {
     homePath: pageContext && `/${pageContext.lang}`
   }
 
-  i18n.use(
+  function transformGatsbyNodeData(d) {
+    let { i18nStatic, i18nPage, i18nAdditions } = d
+    let r = {}
+    if (i18nStatic) {
+      i18nStatic.nodes.forEach(n => {
+        if (n.lang !== pageContext.lang) return
+        r[n.namespace] = JSON.parse(n.allTranslations)
+      })
+    }
+    if (i18nPage) {
+      i18nPage.nodes.forEach(n => {
+        r[n.namespace] = JSON.parse(n.allTranslations)
+      })
+    }
+    if (i18nAdditions) {
+      i18nAdditions.nodes.forEach(n => {
+        r[n.namespace] = n.singleTranslations
+      })
+    }
+    return r
+  }
+
+  const localesData = transformGatsbyNodeData({
+    i18nStatic,
+    i18nPage: data.i18n && data.i18n,
+    i18nAdditions: data.i18nAdditions && data.i18nAdditions
+  })
+
+  init(
     pageContext.lang,
     pageContext.namespaces ? pageContext.namespaces[0] : "common",
-    {
-      i18nStatic,
-      i18nPage: data.i18n && data.i18n,
-      i18nAdditions: data.i18nAdditions && data.i18nAdditions
-    },
-    true
+    localesData
   )
 
   return (
