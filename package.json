@@ -68,8 +68,7 @@
     "production-build": "GATSBY_ACTIVE_ENV=production npm run build",
     "production-build-serve-nat": "npm run clear && npm run production-build && npm run serve-firebase-nat",
     "production-build-deploy": "npm run clear && npm run production-build && npm run deploy",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "test-translations": "node ./translations/test/index.js"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "repository": {
     "type": "git",

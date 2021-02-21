@@ -26,7 +26,7 @@ const combineNavigationLinkNodes = (lang, nodes) =>
     .reduce((a, c) => ({ ...a, ...c }))
 
 export function Layout({ children, data, pageContext }) {
-  console.log("data", data)
+  // console.log("data", data)
   // console.log("pageContext", pageContext)
 
   const {
